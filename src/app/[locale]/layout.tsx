@@ -7,11 +7,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { getContent } from "@/lib/content";
 import { buildAlternates, ogLocaleFor } from "@/lib/seo";
 import { SITE_URL, BRAND, CONSULTANT } from "@/lib/site";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
-import MobileBar from "@/components/MobileBar";
-import FloatingActions from "@/components/FloatingActions";
 import { SearchProvider } from "@/components/SearchDialog";
 import { JsonLd } from "@/components/ui";
 import "../globals.css";
@@ -33,6 +29,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     alternates: buildAlternates(locale as Locale, { pathname: "/" }),
     openGraph: { type: "website", siteName: BRAND, locale: ogLocaleFor(locale), title: c.meta.title, description: c.meta.description, images: [{ url: "/opengraph-image", width: 1200, height: 630 }] },
     twitter: { card: "summary_large_image" },
+    manifest: "/manifest.webmanifest",
+    appleWebApp: { capable: true, title: BRAND, statusBarStyle: "black-translucent" },
     robots: { index: true, follow: true },
   };
 }
@@ -63,12 +61,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
       <body className="font-sans">
         <NextIntlClientProvider>
           <SearchProvider>
-          <a href="#conteudo" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-gold focus:px-3 focus:py-2 focus:text-navy">Ir para o conteúdo</a>
-          <Header />
-          <main id="conteudo">{children}</main>
-          <Footer />
-          <FloatingActions />
-          <MobileBar />
+                    {children}
           <CookieBanner />
           <JsonLd data={org} />
           </SearchProvider>

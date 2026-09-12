@@ -5,7 +5,7 @@ import { allSectorParams, sectorSlugFor, getContent } from "@/lib/content";
 import { listPosts } from "@/lib/blog";
 import { SITE_URL } from "@/lib/site";
 
-const staticRoutes = ["/", "/servicos", "/segmentos", "/metodo", "/sobre", "/investidores", "/contato", "/faq", "/blog", "/ia"] as const satisfies readonly AppPathname[];
+const staticRoutes = ["/", "/servicos", "/segmentos", "/metodo", "/sobre", "/investidores", "/contato", "/faq", "/blog", "/ia", "/fusoes-e-aquisicoes"] as const satisfies readonly AppPathname[];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
@@ -28,6 +28,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const languages: Record<string, string> = {};
     for (const l of locales) { const slug = l === locale ? p.slug : p.alt?.[l]; if (slug) languages[l === "pt" ? "pt-BR" : l] = `${SITE_URL}${getPathname({ locale: l, href: { pathname: "/blog/[slug]", params: { slug } } })}`; }
     entries.push({ url: `${SITE_URL}${getPathname({ locale, href: { pathname: "/blog/[slug]", params: { slug: p.slug } } })}`, lastModified: new Date(p.date), changeFrequency: "monthly", priority: 0.6, alternates: { languages } });
+  }
+  for (const locale of locales) for (const lp of getContent(locale).landings) {
+    const languages: Record<string, string> = {};
+    for (const l of locales) languages[l === "pt" ? "pt-BR" : l] = `${SITE_URL}${getPathname({ locale: l, href: { pathname: "/lp/[slug]", params: { slug: lp.slug } } })}`;
+    entries.push({ url: `${SITE_URL}${getPathname({ locale, href: { pathname: "/lp/[slug]", params: { slug: lp.slug } } })}`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7, alternates: { languages } });
   }
   return entries;
 }

@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { whatsappHref } from "@/lib/site";
 import { SearchButton } from "./SearchDialog";
+import { Icons } from "./icons";
 
 const items = [
   { href: "/servicos", key: "services" },
@@ -13,6 +14,7 @@ const items = [
   { href: "/metodo", key: "method" },
   { href: "/sobre", key: "about" },
   { href: "/investidores", key: "investors" },
+  { href: "/fusoes-e-aquisicoes", key: "ma" },
   { href: "/blog", key: "blog" },
 ] as const;
 
@@ -37,7 +39,7 @@ export default function Header() {
         </nav>
         <div className="hidden items-center gap-3 lg:flex">
           <SearchButton className="rounded border border-navy/20 px-3 py-2 text-sm text-slate hover:bg-cream" label="⌘K" />
-          <Link href="/area-do-cliente" className="text-sm font-medium text-navy hover:text-gold-600">{t("client")}</Link>
+          <Link href="/area-do-cliente" className="flex h-9 w-9 items-center justify-center rounded border border-navy/20 text-navy hover:bg-cream" aria-label={t("client")} title={t("client")}><Icons.user className="h-5 w-5" /></Link>
           <LanguageSwitcher />
           <Link href="/contato" className="rounded bg-gold px-4 py-2 text-sm font-medium text-navy hover:bg-gold-600 hover:text-white">
             {t("cta")}
@@ -55,7 +57,7 @@ export default function Header() {
                 {t(i.key)}
               </Link>
             ))}
-            <Link href="/area-do-cliente" className="rounded px-2 py-2 text-navy hover:bg-cream" onClick={() => setOpen(false)}>{t("client")}</Link>
+            <Link href="/area-do-cliente" className="flex items-center gap-2 rounded px-2 py-2 text-navy hover:bg-cream" onClick={() => setOpen(false)}><Icons.user className="h-5 w-5" />{t("client")}</Link>
             <Link href="/ia" className="rounded px-2 py-2 text-navy hover:bg-cream" onClick={() => setOpen(false)}>{t("ai")}</Link>
             <Link href="/contato" className="mt-2 rounded bg-gold px-4 py-2 text-center font-medium text-navy" onClick={() => setOpen(false)}>
               {t("cta")}

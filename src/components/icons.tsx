@@ -27,10 +27,18 @@ export const Icons = {
   search: P(<><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></>),
   mail: P(<><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></>),
   image: P(<><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 17-5-5-8 8"/></>),
+  user: P(<><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></>),
+  download: P(<><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></>),
+  ma: P(<><path d="M3 21V9l6-4v16"/><path d="M9 21V13l6-4v12"/><path d="M15 21v-6l6-4v10"/><path d="M3 21h18"/></>),
+  linkedin: P(<><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></>),
+  instagram: P(<><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17 7h.01"/></>),
+  youtube: P(<><rect x="2" y="6" width="20" height="12" rx="4"/><path d="m10 9 5 3-5 3z"/></>),
+  facebook: P(<><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></>),
+  phone: P(<><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></>),
   check: P(<><path d="m5 12 4 4L19 6"/></>),
 };
 export type IconName = keyof typeof Icons;
-export const lensIcons: IconName[] = ["market", "marketing", "regulation", "people"];
+export const lensIcons: IconName[] = ["regulation", "market", "marketing", "people"];
 export const moveIcons: IconName[] = ["see", "unlock", "grow"];
 export const serviceIcons: IconName[] = ["express", "dd360", "plan", "steer", "readiness", "orgassess", "nr1"];
 export const peopleIcons: IconName[] = ["orgassess", "people", "nr1"];

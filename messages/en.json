@@ -14,7 +14,8 @@
     "faq": "FAQ",
     "search": "Search",
     "ai": "Ask the AI",
-    "client": "Client area"
+    "client": "Client area",
+    "ma": "Mergers & acquisitions"
   },
   "footer": {
     "tagline": "See the whole company. Unlock what holds it back. Grow again.",
@@ -142,5 +143,19 @@
     "whatsapp": "WhatsApp",
     "search": "Search",
     "contact": "Contact"
+  },
+  "pwa": {
+    "install": "Install as an app",
+    "ios": "On iPhone: tap Share and then \"Add to Home Screen\" to install as an app."
+  },
+  "lp": {
+    "get": "Get the material",
+    "sending": "Sending…",
+    "thanks": "Material unlocked",
+    "thanksIntro": "The checklist is below and was also sent to your e-mail. When you want the full reading of your company, the next step is the Express Due Diligence.",
+    "print": "Print or save as PDF",
+    "next": "Request an Express Due Diligence",
+    "consent": "I authorise sending the material and content on management and regulation in the sector, under the",
+    "back": "Back to the site"
   }
 }

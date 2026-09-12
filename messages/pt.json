@@ -14,7 +14,8 @@
     "faq": "FAQ",
     "search": "Buscar",
     "ai": "Pergunte à IA",
-    "client": "Área do cliente"
+    "client": "Área do cliente",
+    "ma": "Fusões e aquisições"
   },
   "footer": {
     "tagline": "Ampliar a visão. Destravar áreas. Crescer de novo.",
@@ -142,5 +143,19 @@
     "whatsapp": "WhatsApp",
     "search": "Buscar",
     "contact": "Contato"
+  },
+  "pwa": {
+    "install": "Instalar como app",
+    "ios": "No iPhone: toque em Compartilhar e depois em \"Adicionar à Tela de Início\" para instalar como app."
+  },
+  "lp": {
+    "get": "Receber o material",
+    "sending": "Enviando…",
+    "thanks": "Material liberado",
+    "thanksIntro": "O checklist está abaixo e também foi enviado para o seu e-mail. Quando quiser a leitura completa da sua empresa, o próximo passo é a Due Diligence Express.",
+    "print": "Imprimir ou salvar em PDF",
+    "next": "Solicitar Due Diligence Express",
+    "consent": "Autorizo o envio do material e de conteúdo sobre gestão e regulação do setor, conforme a",
+    "back": "Voltar ao site"
   }
 }

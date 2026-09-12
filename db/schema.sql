@@ -30,3 +30,15 @@ create table if not exists acesso_log (
   artifact_id uuid references artifact(id) on delete set null,
   evento      text not null              -- login | abrir_artifact
 );
+
+create table if not exists lead (
+  id          uuid primary key default gen_random_uuid(),
+  criado_em   timestamptz not null default now(),
+  nome        text not null,
+  empresa     text,
+  email       text not null,
+  whatsapp    text,
+  segmento    text not null,      -- slug da landing
+  origem      text,               -- utm_source/medium/campaign
+  locale      text
+);

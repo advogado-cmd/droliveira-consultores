@@ -28,6 +28,9 @@ export const routing = defineRouting({
     "/area-do-cliente": { pt: "/area-do-cliente", en: "/client-area", es: "/area-del-cliente" },
     "/area-do-cliente/painel": { pt: "/area-do-cliente/painel", en: "/client-area/dashboard", es: "/area-del-cliente/panel" },
     "/admin": "/admin",
+    "/fusoes-e-aquisicoes": { pt: "/fusoes-e-aquisicoes", en: "/mergers-and-acquisitions", es: "/fusiones-y-adquisiciones" },
+    "/lp/[slug]": "/lp/[slug]",
+    "/lp/[slug]/obrigado": { pt: "/lp/[slug]/obrigado", en: "/lp/[slug]/thank-you", es: "/lp/[slug]/gracias" },
     "/admin/painel": "/admin/painel",
   },
 });

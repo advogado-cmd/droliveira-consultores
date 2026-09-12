@@ -30,7 +30,7 @@ export default function LanguageSwitcher() {
       <span className="sr-only">{t("label")}</span>
       <select value={locale} onChange={(e) => change(e.target.value as Locale)} className="rounded-field border border-navy/20 bg-white px-2 py-1.5 text-sm text-navy focus:outline focus:outline-2 focus:outline-gold" aria-label={t("label")}>
         {locales.map((l) => (
-          <option key={l} value={l}>{t(l)}</option>
+          <option key={l} value={l}>{l.toUpperCase()}</option>
         ))}
       </select>
     </label>

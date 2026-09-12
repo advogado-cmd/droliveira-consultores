@@ -17,7 +17,9 @@ export function buildIndex(locale: Locale): SearchDoc[] {
   docs.push({ kind: "page", title: c.method.title, text: [c.method.intro, ...c.method.families.map((f) => `${f.name}: ${f.fronts.join(", ")}`), ...c.method.rules, c.method.note].join(" "), href: P("/metodo") });
   docs.push({ kind: "page", title: c.people.title, text: [c.people.intro, ...c.people.items.map((i) => `${i.title}: ${i.text} ${i.bullets.join(", ")}`), c.people.note].join(" "), href: `${P("/servicos")}#pessoas` });
   docs.push({ kind: "page", title: c.investors.title, text: `${c.investors.intro} ${c.investors.points.join(". ")}`, href: P("/investidores") });
-  for (const f of c.faq) docs.push({ kind: "faq", title: f.q, text: f.a, href: P("/faq") });
+  docs.push({ kind: "page", title: c.ma.title, text: [c.ma.intro, ...c.ma.sides.flatMap((x) => [x.text, ...x.items]), ...c.ma.steps.map((x) => `${x.title}: ${x.text}`)].join(" "), href: P("/fusoes-e-aquisicoes") });
+  for (const lp of c.landings) docs.push({ kind: "page", title: lp.magnet.title, text: `${lp.headline} ${lp.sub} ${lp.magnet.items.join(", ")}`, href: P({ pathname: "/lp/[slug]", params: { slug: lp.slug } }) });
+  for (const f of [...c.faq, ...c.faqAnalysis]) docs.push({ kind: "faq", title: f.q, text: f.a, href: P("/faq") });
   docs.push({ kind: "page", title: c.contact.title, text: `${c.contact.intro} ${c.contact.cities}`, href: P("/contato") });
   for (const p of listPosts(locale)) docs.push({ kind: "post", title: p.title, text: `${p.description} ${p.html.replace(/<[^>]+>/g, " ")}`.slice(0, 4000), href: P({ pathname: "/blog/[slug]", params: { slug: p.slug } }) });
   return docs;

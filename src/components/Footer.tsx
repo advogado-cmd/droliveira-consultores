@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { BRAND } from "@/lib/site";
+import { BRAND, SOCIALS, PHONE, EMAIL } from "@/lib/site";
+import { Icons } from "./icons";
+import InstallApp from "./InstallApp";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -13,6 +15,11 @@ export default function Footer() {
           <Image src="/brand/logo-clara.png" alt={BRAND} width={240} height={74} className="h-12 w-auto" />
           <p className="mt-4 max-w-md font-serif text-lg text-cream/90">{t("tagline")}</p>
           <p className="mt-3 text-sm text-cream/70">{t("cities")}</p>
+          <p className="mt-4 text-sm text-cream/80"><a href={`tel:${PHONE.replace(/\D/g, "")}`} className="hover:text-gold">{PHONE}</a> · <a href={`mailto:${EMAIL}`} className="hover:text-gold">{EMAIL}</a></p>
+          <ul className="mt-4 flex gap-3" aria-label="Redes sociais">
+            {SOCIALS.map((s) => { const I = Icons[s.name.toLowerCase() as "linkedin" | "instagram" | "youtube" | "facebook"]; return <li key={s.name}><a href={s.href} target="_blank" rel="noopener" aria-label={s.name} className="flex h-9 w-9 items-center justify-center rounded border border-cream/30 text-cream hover:border-gold hover:text-gold"><I className="h-5 w-5" /></a></li>; })}
+          </ul>
+          <div className="mt-4"><InstallApp /></div>
         </div>
         <nav aria-label="Rodapé" className="text-sm">
           <ul className="space-y-2">
@@ -21,6 +28,7 @@ export default function Footer() {
             <li><Link href="/metodo" className="hover:text-gold">{n("method")}</Link></li>
             <li><Link href="/sobre" className="hover:text-gold">{n("about")}</Link></li>
             <li><Link href="/investidores" className="hover:text-gold">{n("investors")}</Link></li>
+            <li><Link href="/fusoes-e-aquisicoes" className="hover:text-gold">{n("ma")}</Link></li>
             <li><Link href="/contato" className="hover:text-gold">{n("contact")}</Link></li>
             <li><Link href="/blog" className="hover:text-gold">{n("blog")}</Link></li>
             <li><Link href="/faq" className="hover:text-gold">{n("faq")}</Link></li>

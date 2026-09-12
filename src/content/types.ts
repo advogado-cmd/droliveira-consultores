@@ -43,6 +43,27 @@ export type People = {
   note: string;
 };
 
+export type Landing = {
+  slug: string; // igual em todos os idiomas (chave estavel)
+  sectorKey: Sector["key"];
+  name: string;
+  headline: string;
+  sub: string;
+  pains: { title: string; text: string }[];
+  magnet: { title: string; intro: string; items: string[] };
+  cta: string;
+  metaTitle: string;
+  metaDescription: string;
+};
+
+export type MA = {
+  metaTitle: string; metaDescription: string; title: string; intro: string;
+  signals: { n: string; text: string }[];
+  sides: { title: string; text: string; items: string[] }[];
+  steps: { title: string; text: string }[];
+  cta: string;
+};
+
 export type SiteContent = {
   meta: { title: string; description: string; ogLocale: string };
   images: { services: string; method: string; investors: string; contact: string; blog: string; people: string };
@@ -64,9 +85,12 @@ export type SiteContent = {
   services: { metaTitle: string; metaDescription: string; title: string; intro: string; items: Service[]; faq: Faq[] };
   sectors: { metaTitle: string; metaDescription: string; title: string; intro: string; items: Sector[] };
   method: { metaTitle: string; metaDescription: string; title: string; intro: string; families: { name: string; fronts: string[] }[]; rules: string[]; note: string };
-  about: { metaTitle: string; metaDescription: string; title: string; name: string; bio: string[]; credentials: string[]; network: string };
+  about: { metaTitle: string; metaDescription: string; title: string; name: string; bio: string[]; credentials: string[]; network: string; sections: { title: string; items: string[] }[] };
   investors: { metaTitle: string; metaDescription: string; title: string; intro: string; points: string[]; cta: string };
-  contact: { metaTitle: string; metaDescription: string; title: string; intro: string; cities: string; sectorOptions: string[] };
+  contact: { metaTitle: string; metaDescription: string; title: string; intro: string; cities: string; phone: string; email: string; sectorOptions: string[] };
   legal: { privacy: { title: string; body: string[] }; cookies: { title: string; body: string[] }; terms: { title: string; body: string[] } };
   faq: Faq[];
+  faqAnalysis: Faq[];
+  landings: Landing[];
+  ma: MA;
 };
