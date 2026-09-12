@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "services": "Serviços",
+    "sectors": "Segmentos",
+    "method": "Método",
+    "about": "Sobre",
+    "investors": "Investidores",
+    "contact": "Contato",
+    "cta": "Solicitar due diligence",
+    "whatsapp": "WhatsApp",
+    "menu": "Menu",
+    "close": "Fechar",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "search": "Buscar",
+    "ai": "Pergunte à IA",
+    "client": "Área do cliente"
+  },
+  "footer": {
+    "tagline": "Ampliar a visão. Destravar áreas. Crescer de novo.",
+    "cities": "São Paulo · Recife · Belém",
+    "legal": "Legal",
+    "privacy": "Privacidade",
+    "cookies": "Cookies",
+    "terms": "Termos de uso",
+    "rights": "Todos os direitos reservados.",
+    "disclaimer": "Dr Oliveira Consultores presta consultoria de gestão, mercado e conformidade operacional. Não presta serviços jurídicos, médicos ou veterinários."
+  },
+  "lang": {
+    "label": "Idioma",
+    "pt": "Português",
+    "en": "English",
+    "es": "Español"
+  },
+  "cookies": {
+    "text": "Usamos cookies necessários ao funcionamento do site e, com o seu consentimento, cookies de análise de audiência.",
+    "accept": "Aceitar análise",
+    "reject": "Só os necessários",
+    "policy": "Política de cookies"
+  },
+  "form": {
+    "name": "Nome",
+    "company": "Empresa",
+    "sector": "Segmento",
+    "role": "Cargo",
+    "whatsapp": "WhatsApp",
+    "email": "E-mail",
+    "message": "Conte em poucas linhas o que a empresa precisa",
+    "consent": "Autorizo o uso destes dados para responder ao meu contato, conforme a",
+    "privacy": "Política de Privacidade",
+    "submit": "Solicitar due diligence",
+    "sending": "Enviando…",
+    "ok": "Recebemos sua mensagem. Respondemos em até um dia útil.",
+    "err": "Não foi possível enviar. Tente pelo WhatsApp ou e-mail.",
+    "select": "Selecione"
+  },
+  "common": {
+    "readMore": "Ver detalhes",
+    "back": "Voltar",
+    "faq": "Perguntas frequentes",
+    "whatWeAnalyse": "O que analisamos",
+    "outcome": "Resultado",
+    "allSectors": "Todos os segmentos",
+    "howItWorks": "Como funciona",
+    "threeLenses": "Quatro lentes, uma leitura",
+    "forWhom": "Para quem",
+    "credentials": "Credenciais",
+    "services": "Serviços",
+    "question": "Pergunta que responde",
+    "deliverable": "Entrega",
+    "timeline": "Prazo",
+    "rules": "Três regras do método"
+  },
+  "search": {
+    "title": "Buscar no site",
+    "placeholder": "Digite o que procura…",
+    "hint": "Atalho ⌘K / Ctrl+K",
+    "none": "Nada encontrado para",
+    "results": "Resultados",
+    "ai": "Perguntar à IA sobre isso",
+    "close": "Fechar"
+  },
+  "ai": {
+    "title": "Pergunte à IA",
+    "intro": "Faça uma pergunta sobre a consultoria, os serviços, os segmentos ou o método. A resposta usa apenas o conteúdo deste site.",
+    "placeholder": "Ex.: o que muda com a NR-1 para uma clínica com 30 funcionários?",
+    "send": "Perguntar",
+    "thinking": "Pensando…",
+    "disclaimer": "Respostas informativas geradas por IA a partir do conteúdo do site; não substituem uma conversa com o consultor nem constituem aconselhamento jurídico, médico ou veterinário.",
+    "unavailable": "O assistente ainda não está configurado. Fale conosco pelo formulário.",
+    "sources": "Páginas relacionadas"
+  },
+  "client": {
+    "title": "Área do cliente",
+    "intro": "Acesse os relatórios e o acompanhamento do seu projeto.",
+    "email": "E-mail",
+    "password": "Senha",
+    "login": "Entrar",
+    "logout": "Sair",
+    "error": "E-mail ou senha inválidos.",
+    "welcome": "Olá",
+    "yourReports": "Seus relatórios",
+    "none": "Nenhum relatório disponível ainda.",
+    "open": "Abrir relatório",
+    "updated": "Atualizado em"
+  },
+  "admin": {
+    "title": "Administração",
+    "password": "Senha de administração",
+    "login": "Entrar",
+    "clients": "Clientes",
+    "newClient": "Novo cliente",
+    "name": "Nome",
+    "company": "Empresa",
+    "email": "E-mail",
+    "tempPassword": "Senha inicial",
+    "create": "Criar cliente",
+    "artifacts": "Relatórios (artifacts)",
+    "link": "Vincular relatório a um cliente",
+    "clientSel": "Cliente",
+    "artTitle": "Título do relatório",
+    "file": "Arquivo HTML",
+    "upload": "Enviar e vincular",
+    "uploading": "Enviando…",
+    "done": "Vinculado.",
+    "noDb": "Banco de dados não configurado (DATABASE_URL). Veja o README.",
+    "error": "Erro"
+  },
+  "blog": {
+    "title": "Insights",
+    "intro": "Leituras curtas sobre mercado, gestão e regulação nos setores que atendemos.",
+    "read": "Ler",
+    "by": "Por",
+    "minutes": "min de leitura",
+    "back": "Todos os artigos"
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "intro": "O que os donos de empresa nos perguntam antes de começar."
+  },
+  "bar": {
+    "whatsapp": "WhatsApp",
+    "search": "Buscar",
+    "contact": "Contato"
+  }
+}

@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# droliveiraconsultores.com.br
 
-## Getting Started
+Site trilíngue (PT · EN · ES) da Dr Oliveira Consultores. Next.js 15 (App Router) + next-intl + Tailwind, deploy na Vercel.
 
-First, run the development server:
+## Rodar localmente
 
 ```bash
+cp .env.example .env.local
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra http://localhost:3000 — a raiz redireciona para `/pt`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estrutura
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/i18n/routing.ts` — idiomas, prefixo obrigatório (`/pt`, `/en`, `/es`) e slugs localizados por rota.
+- `src/content/{pt,en,es}.ts` — todo o texto editorial, um arquivo por idioma (mesmo formato de `types.ts`). Quando o Payload CMS entrar, estes objetos viram documentos localizados.
+- `messages/*.json` — textos de interface (menu, rodapé, formulário, cookies).
+- `src/app/[locale]/…` — páginas: home, serviços, segmentos (hub + 5), método, sobre, investidores, contato, privacidade, cookies, termos.
+- `src/app/api/contact/route.ts` — formulário → e-mail via Resend (honeypot + validação).
+- `src/app/sitemap.ts` e `robots.ts` — sitemap com hreflang por URL; `opengraph-image.tsx` — imagem OG gerada.
+- `public/brand/` — marca oficial (kit "Manual e Marcas", versão D4): `logo-navy.png/.svg`, `logo-clara.png`, `emblema.png/.svg`, `avatar.png`; favicons em `src/app/icon.png` e `src/app/apple-icon.png`. `public/consultor.jpg` — retrato do consultor.
 
-## Learn More
+## Recursos
 
-To learn more about Next.js, take a look at the following resources:
+- **Busca** (⌘K / Ctrl+K, barra inferior no mobile e `/pt/busca`): índice gerado do conteúdo + posts, servido por `/api/search`.
+- **Pergunte à IA** (`/pt/ia`): recupera os trechos mais relevantes do site e pede resposta ao modelo (Anthropic) restrita a esse contexto; sem `ANTHROPIC_API_KEY` mostra só as páginas relacionadas.
+- **FAQ** (`/pt/faq`) com schema FAQPage.
+- **Blog** (`/pt/blog`): arquivos Markdown em `content/blog/{pt,en,es}/*.md` com frontmatter (`title`, `description`, `date`, `sector`, `alt` = slugs equivalentes nos outros idiomas para o hreflang).
+- **Área do cliente** (`/pt/area-do-cliente`): login por e-mail/senha; painel lista os relatórios vinculados; cada relatório é servido por `/api/cliente/artifact/[id]` só ao dono (URL do Blob nunca exposta).
+- **Admin** (`/pt/admin`): senha única (`ADMIN_PASSWORD`); cria clientes e vincula relatórios HTML (upload direto do navegador para o Vercel Blob, sem limite de 4,5 MB).
+- **Barra inferior mobile**: WhatsApp, busca e contato fixos.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Área do cliente — primeira configuração
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Crie um projeto no Neon e copie a `DATABASE_URL`; rode `DATABASE_URL=... npm run db:init` (cria as tabelas de `db/schema.sql`).
+2. Na Vercel, ative o Blob Storage do projeto (gera `BLOB_READ_WRITE_TOKEN`).
+3. Defina `SESSION_SECRET` (32 bytes aleatórios em base64) e `ADMIN_PASSWORD`.
+4. Acesse `/pt/admin`, crie o cliente e envie o relatório HTML vinculado a ele. O cliente entra em `/pt/area-do-cliente`.
 
-## Deploy on Vercel
+Segurança: senhas com scrypt; sessões em cookie httpOnly assinado (HMAC) com 12 h; relatórios servidos por proxy autenticado com `no-store` e `noindex`; log de acessos em `acesso_log`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Variáveis de ambiente (Vercel → Settings → Environment Variables)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Variável | Uso |
+|---|---|
+| `NEXT_PUBLIC_SITE_URL` | `https://droliveiraconsultores.com.br` (canonical, hreflang, sitemap) |
+| `NEXT_PUBLIC_WHATSAPP` | número próprio da consultoria, só dígitos com DDI (ex.: `5511…`). Vazio = botão leva ao formulário |
+| `NEXT_PUBLIC_GA_ID` | ID do GA4; só carrega após consentimento no banner |
+| `RESEND_API_KEY` | chave do Resend; sem ela o formulário só registra no log |
+| `CONTACT_TO` / `CONTACT_FROM` | destino e remetente do e-mail (o domínio do remetente precisa estar verificado no Resend) |
+| `DATABASE_URL` | Neon Postgres (área do cliente) |
+| `SESSION_SECRET` | chave das sessões (cliente e admin) |
+| `ADMIN_PASSWORD` | senha do painel `/admin` |
+| `BLOB_READ_WRITE_TOKEN` | Vercel Blob (upload dos relatórios) |
+| `ANTHROPIC_API_KEY` / `ANTHROPIC_MODEL` | busca por IA |
+
+## Deploy
+
+Push na `main` dispara o build na Vercel. Build: `next build`. Rollback: Vercel → Deployments → Promote to Production no deploy anterior.
+
+## Conformidade
+
+O site não menciona serviços jurídicos, OAB ou o escritório de advocacia. Termos, privacidade e cookies em `src/content/*.ts` (`legal`). Itens marcados `[A CONFIRMAR]` aguardam dados do titular.
