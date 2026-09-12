@@ -4,6 +4,8 @@ import type { Locale } from "@/i18n/routing";
 import { getContent } from "@/lib/content";
 import { buildAlternates } from "@/lib/seo";
 import { Section, Eyebrow, H1, H2, ButtonLink } from "@/components/ui";
+import { IconBadge, moveIcons } from "@/components/icons";
+import ImageFrame from "@/components/ImageFrame";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params; const c = getContent(locale);
@@ -17,8 +19,10 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
     <>
       <Section tone="paper">
         <Eyebrow>{t("method")}</Eyebrow>
-        <H1>{c.method.title}</H1>
-        <p className="mt-5 max-w-prose text-lg leading-relaxed">{c.method.intro}</p>
+        <div className="grid gap-8 md:grid-cols-[1.4fr_1fr] md:items-center">
+          <div><H1>{c.method.title}</H1><p className="mt-5 max-w-prose text-lg leading-relaxed">{c.method.intro}</p></div>
+          <ImageFrame brief={c.images.method} ratio="1/1" />
+        </div>
       </Section>
       <Section tone="navy" className="pt-0 md:pt-0">
         <div className="grid gap-4 pt-16 md:grid-cols-4 md:pt-20">
@@ -38,7 +42,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <div className="grid gap-8 md:grid-cols-3">
           {c.home.moves.map((m) => (
             <div key={m.n}>
-              <p className="font-serif text-3xl text-gold-600">{m.n}</p>
+              <div className="mb-3 flex items-center gap-3"><IconBadge name={moveIcons[Number(m.n) - 1]} tone="oliva" /><p className="font-serif text-3xl text-gold-600">{m.n}</p></div>
               <h3 className="font-serif text-2xl text-navy">{m.title}</h3>
               <p className="mt-2 text-[15px] leading-relaxed">{m.text}</p>
             </div>

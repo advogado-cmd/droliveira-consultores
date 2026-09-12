@@ -5,6 +5,7 @@ import type { Locale } from "@/i18n/routing";
 import { getContent } from "@/lib/content";
 import { buildAlternates } from "@/lib/seo";
 import { Section, Eyebrow, H1, ButtonLink } from "@/components/ui";
+import { IconBadge } from "@/components/icons";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params; const c = getContent(locale);
@@ -24,6 +25,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           {c.sectors.items.map((s) => (
             <li key={s.key}>
               <Link href={{ pathname: "/segmentos/[slug]", params: { slug: s.slug } }} className="block h-full rounded-card border border-navy/10 bg-white p-6 hover:border-gold">
+                <div className="mb-4"><IconBadge name={s.key} size="lg" /></div>
                 <h2 className="font-serif text-2xl text-navy">{s.name}</h2>
                 <p className="mt-2 text-[15px] text-ink">{s.headline}</p>
                 <span className="mt-4 inline-block text-sm font-medium text-gold-600">{t("readMore")} →</span>

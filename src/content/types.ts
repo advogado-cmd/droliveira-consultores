@@ -22,6 +22,8 @@ export type Sector = {
   outcome: string;
   metaTitle: string;
   metaDescription: string;
+  imageBrief: string; // descricao da foto prevista (mostrada no quadro ate a imagem existir)
+  image?: string;
 };
 
 export type Consultant = {
@@ -43,6 +45,7 @@ export type People = {
 
 export type SiteContent = {
   meta: { title: string; description: string; ogLocale: string };
+  images: { services: string; method: string; investors: string; contact: string; blog: string; people: string };
   consultant: Consultant;
   people: People;
   home: {

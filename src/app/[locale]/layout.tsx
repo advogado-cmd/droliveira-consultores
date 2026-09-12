@@ -11,6 +11,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import MobileBar from "@/components/MobileBar";
+import FloatingActions from "@/components/FloatingActions";
 import { SearchProvider } from "@/components/SearchDialog";
 import { JsonLd } from "@/components/ui";
 import "../globals.css";
@@ -66,6 +67,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
           <Header />
           <main id="conteudo">{children}</main>
           <Footer />
+          <FloatingActions />
           <MobileBar />
           <CookieBanner />
           <JsonLd data={org} />

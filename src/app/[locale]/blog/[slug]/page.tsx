@@ -7,6 +7,8 @@ import { readPost, allPostParams } from "@/lib/blog";
 import { buildAlternates } from "@/lib/seo";
 import { JsonLd } from "@/components/ui";
 import { BRAND, SITE_URL } from "@/lib/site";
+import ImageFrame from "@/components/ImageFrame";
+import { getContent } from "@/lib/content";
 
 export function generateStaticParams() { return allPostParams(); }
 
@@ -18,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function Page({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale, slug } = await params; setRequestLocale(locale);
   const p = readPost(locale, slug); if (!p) notFound();
-  const t = await getTranslations("blog");
+  const t = await getTranslations("blog"); const c = getContent(locale);
   return (
     <article className="container py-14">
       <Link href="/blog" className="text-sm text-gold-600">← {t("back")}</Link>
@@ -26,6 +28,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       <h1 className="mt-2 max-w-3xl font-serif text-4xl leading-tight text-navy" style={{ textWrap: "balance" }}>{p.title}</h1>
       <p className="mt-3 max-w-prose text-lg text-slate">{p.description}</p>
       <p className="mt-2 text-sm text-slate">{t("by")} {p.author}</p>
+      <div className="mt-8 max-w-3xl"><ImageFrame brief={c.images.blog} ratio="21/9" /></div>
       <div className="prose-dro mt-8 max-w-prose text-[17px] leading-relaxed [&_h2]:mt-8 [&_h2]:font-serif [&_h2]:text-2xl [&_h2]:text-navy [&_p]:mt-4 [&_em]:text-slate [&_a]:text-gold-600" dangerouslySetInnerHTML={{ __html: p.html }} />
       <JsonLd data={{ "@context": "https://schema.org", "@type": "Article", headline: p.title, description: p.description, datePublished: p.date, author: { "@type": "Person", name: p.author }, publisher: { "@type": "Organization", name: BRAND, url: SITE_URL } }} />
     </article>

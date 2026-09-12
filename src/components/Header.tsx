@@ -39,9 +39,6 @@ export default function Header() {
           <SearchButton className="rounded border border-navy/20 px-3 py-2 text-sm text-slate hover:bg-cream" label="⌘K" />
           <Link href="/area-do-cliente" className="text-sm font-medium text-navy hover:text-gold-600">{t("client")}</Link>
           <LanguageSwitcher />
-          <a href={wa} className="rounded border border-navy-500 px-3 py-2 text-sm font-medium text-navy hover:bg-cream" target={wa.startsWith("http") ? "_blank" : undefined} rel="noopener">
-            {t("whatsapp")}
-          </a>
           <Link href="/contato" className="rounded bg-gold px-4 py-2 text-sm font-medium text-navy hover:bg-gold-600 hover:text-white">
             {t("cta")}
           </Link>

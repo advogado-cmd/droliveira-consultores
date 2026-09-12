@@ -7,6 +7,8 @@ import { getContent, getSector, allSectorParams, sectorSlugFor } from "@/lib/con
 import { buildAlternates } from "@/lib/seo";
 import { Section, Eyebrow, H1, H2, ButtonLink, Faq, JsonLd } from "@/components/ui";
 import { BRAND } from "@/lib/site";
+import { IconBadge, Icons } from "@/components/icons";
+import ImageFrame from "@/components/ImageFrame";
 
 export function generateStaticParams() { return allSectorParams(); }
 
@@ -24,10 +26,14 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   return (
     <>
       <section className="border-b-4 border-gold bg-navy text-cream">
-        <div className="container py-16 md:py-20">
-          <nav aria-label="Breadcrumb" className="mb-4 text-sm text-cream/70"><Link href="/segmentos" className="hover:text-gold">{c.sectors.title}</Link> <span aria-hidden="true">/</span> {s.name}</nav>
-          <Eyebrow light>{s.name}</Eyebrow>
-          <H1 light>{s.headline}</H1>
+        <div className="container grid gap-10 py-16 md:grid-cols-[1.4fr_1fr] md:items-center md:py-20">
+          <div>
+            <nav aria-label="Breadcrumb" className="mb-4 text-sm text-cream/70"><Link href="/segmentos" className="hover:text-gold">{c.sectors.title}</Link> <span aria-hidden="true">/</span> {s.name}</nav>
+            <div className="mb-3"><IconBadge name={s.key} tone="cream" size="lg" /></div>
+            <Eyebrow light>{s.name}</Eyebrow>
+            <H1 light>{s.headline}</H1>
+          </div>
+          <ImageFrame brief={s.imageBrief} src={s.image} alt={s.name} ratio="4/3" tone="dark" />
         </div>
       </section>
       <Section tone="paper">
@@ -35,7 +41,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           <div>
             <H2>{t("whatWeAnalyse")}</H2>
             <ul className="mt-5 grid gap-3">
-              {s.analyse.map((a) => <li key={a} className="flex gap-3 rounded-card border border-navy/10 bg-white p-4 text-[15px]"><span aria-hidden="true" className="mt-1 h-2 w-2 shrink-0 rounded-full bg-oliva" />{a}</li>)}
+              {s.analyse.map((a) => <li key={a} className="flex gap-3 rounded-card border border-navy/10 bg-white p-4 text-[15px]"><Icons.check className="mt-0.5 h-5 w-5 shrink-0 text-oliva" />{a}</li>)}
             </ul>
           </div>
           <div className="rounded-card border-l-4 border-gold bg-white p-6">

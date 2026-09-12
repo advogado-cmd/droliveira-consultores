@@ -5,6 +5,8 @@ import { getContent } from "@/lib/content";
 import { buildAlternates } from "@/lib/seo";
 import { Section, Eyebrow, H1, H2, ButtonLink, Faq, JsonLd } from "@/components/ui";
 import { BRAND } from "@/lib/site";
+import { IconBadge, serviceIcons, peopleIcons } from "@/components/icons";
+import ImageFrame from "@/components/ImageFrame";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params; const c = getContent(locale);
@@ -19,14 +21,16 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
     <>
       <Section tone="paper">
         <Eyebrow>{t("services")}</Eyebrow>
-        <H1>{c.services.title}</H1>
-        <p className="mt-4 max-w-prose text-lg text-slate">{c.services.intro}</p>
+        <div className="grid gap-8 md:grid-cols-[1.4fr_1fr] md:items-center">
+          <div><H1>{c.services.title}</H1><p className="mt-4 max-w-prose text-lg text-slate">{c.services.intro}</p></div>
+          <ImageFrame brief={c.images.services} ratio="4/3" />
+        </div>
       </Section>
       <Section tone="cream" className="pt-0 md:pt-0">
         <ol className="grid gap-5">
           {c.services.items.map((s, i) => (
             <li key={s.slug} id={s.slug} className="grid gap-4 rounded-card border border-navy/10 bg-white p-6 md:grid-cols-[auto_1fr_1fr] md:gap-8">
-              <div className="font-serif text-4xl text-gold-600 md:w-12">{i + 1}</div>
+              <div className="flex items-center gap-3 md:w-24 md:flex-col md:items-start"><IconBadge name={serviceIcons[i]} /><span className="font-serif text-3xl text-gold-600">{i + 1}</span></div>
               <div>
                 <h2 className="font-serif text-2xl text-navy">{s.name}</h2>
                 <p className="mt-1 text-sm font-medium uppercase tracking-wider text-oliva-700">{t("question")}</p>
@@ -48,8 +52,9 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <H2>{c.people.title}</H2>
         <p className="mt-3 max-w-prose text-slate">{c.people.intro}</p>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
-          {c.people.items.map((i) => (
+          {c.people.items.map((i, k) => (
             <div key={i.title} className="rounded-card border-t-4 border-oliva bg-white p-6">
+              <div className="mb-4"><IconBadge name={peopleIcons[k]} tone="oliva" /></div>
               <h3 className="font-serif text-xl text-navy">{i.title}</h3>
               <p className="mt-2 text-[15px] leading-relaxed">{i.text}</p>
               <ul className="mt-3 space-y-1 text-sm text-slate">{i.bullets.map((b) => <li key={b}>· {b}</li>)}</ul>
@@ -57,6 +62,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           ))}
         </div>
         <p className="mt-4 max-w-prose text-xs text-slate">{c.people.note}</p>
+        <div className="mt-8 max-w-2xl"><ImageFrame brief={c.images.people} ratio="21/9" /></div>
       </Section>
       <Section tone="cream"><Faq items={c.faq} title={t("faq")} /></Section>
       <JsonLd data={ld} />

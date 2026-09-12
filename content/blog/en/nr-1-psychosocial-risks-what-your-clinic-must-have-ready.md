@@ -9,7 +9,7 @@ MTE Ordinance 1,419/2024 brought psychosocial risk factors into the Occupational
 
 ## What inspectors ask for
 
-The Risk Management Programme (PGR) must show three things: that psychosocial risks were identified by job function — overload, exhausting schedules, harassment, role conflict, lack of autonomy —, that each risk was assessed, and that there is an action plan with an owner and a deadline. Without follow-up evidence, the plan is worth little.
+The Risk Management Programme (PGR) must show three things: that psychosocial risks were identified by job function, overload, exhausting schedules, harassment, role conflict, lack of autonomy, that each risk was assessed, and that there is an action plan with an owner and a deadline. Without follow-up evidence, the plan is worth little.
 
 ## Why clinics and hospitals are more exposed
 
@@ -17,6 +17,6 @@ Shifts, contact with suffering, payer pressure and lean teams concentrate exactl
 
 ## Where to start
 
-A survey by function with a validated instrument applied by a licensed psychologist; the inventory in the PGR; an action plan; and a follow-up routine that produces evidence. That is the package the consultancy delivers in four to six weeks — and it usually reveals, along the way, the points of tension that hold the company's growth back.
+A survey by function with a validated instrument applied by partner psychologists on our team; the inventory in the PGR; an action plan; and a follow-up routine that produces evidence. That is the package the consultancy delivers in four to six weeks, and it usually reveals, along the way, the points of tension that hold the company's growth back.
 
 *References: MTE Ordinance 1,419/2024; NR-1 (GRO/PGR). Confirm the rule is in force before any decision.*

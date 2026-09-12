@@ -3,6 +3,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getContent } from "@/lib/content";
 import { Section, Eyebrow, H1, H2, ButtonLink, Card, Faq, JsonLd } from "@/components/ui";
+import { IconBadge, lensIcons, moveIcons, peopleIcons } from "@/components/icons";
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -17,7 +18,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <section className="border-b-4 border-gold bg-navy text-cream">
         <div className="container grid items-center gap-10 py-16 md:grid-cols-[1.3fr_1fr] md:py-24">
           <div>
-            <Eyebrow light>Estratégia · Mercado · Regulação</Eyebrow>
+            <Eyebrow light>Estratégia · Mercado · Regulação · Pessoas</Eyebrow>
             <H1 light>{c.home.heroTitle}</H1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-cream/85">{c.home.heroSub}</p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -38,7 +39,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <Section tone="paper">
         <Eyebrow>{t("threeLenses")}</Eyebrow>
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {c.home.lenses.map((l) => <Card key={l.title} title={l.title}>{l.text}</Card>)}
+          {c.home.lenses.map((l, i) => <Card key={l.title} title={l.title} icon={lensIcons[i]}>{l.text}</Card>)}
         </div>
       </Section>
 
@@ -48,7 +49,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <div className="grid gap-5 md:grid-cols-3">
           {c.home.moves.map((m) => (
             <div key={m.n} className="rounded-card border-l-4 border-oliva bg-white p-6">
-              <p className="font-serif text-3xl text-gold-600">{m.n}</p>
+              <div className="flex items-center justify-between"><IconBadge name={moveIcons[Number(m.n) - 1]} tone="oliva" /><p className="font-serif text-3xl text-gold-600">{m.n}</p></div>
               <h3 className="mt-1 font-serif text-2xl text-navy">{m.title}</h3>
               <p className="mt-2 text-[15px] leading-relaxed">{m.text}</p>
             </div>
@@ -67,9 +68,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           <ul className="grid gap-3 sm:grid-cols-2">
             {c.sectors.items.map((s) => (
               <li key={s.key}>
-                <Link href={{ pathname: "/segmentos/[slug]", params: { slug: s.slug } }} className="block rounded-card border border-navy/10 bg-white p-4 hover:border-gold">
-                  <span className="font-medium text-navy">{s.name}</span>
-                  <span className="mt-1 block text-sm text-slate">{s.short}</span>
+                <Link href={{ pathname: "/segmentos/[slug]", params: { slug: s.slug } }} className="flex gap-3 rounded-card border border-navy/10 bg-white p-4 hover:border-gold">
+                  <IconBadge name={s.key} /><span><span className="font-medium text-navy">{s.name}</span>
+                  <span className="mt-1 block text-sm text-slate">{s.short}</span></span>
                 </Link>
               </li>
             ))}
@@ -81,7 +82,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <Section tone="navy">
         <div className="grid gap-10 md:grid-cols-[1fr_1.6fr] md:items-start">
           <div>
-            <Image src="/consultor.jpg" alt={c.consultant.title} width={480} height={600} className="w-full max-w-sm rounded-card border-4 border-gold object-cover" />
+            <Image src="/consultor.jpg" alt={c.consultant.title} width={480} height={600} loading="eager" className="w-full max-w-sm rounded-card border-4 border-gold object-cover" />
           </div>
           <div>
             <Eyebrow light>{c.consultant.eyebrow}</Eyebrow>
@@ -108,8 +109,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <H2>{c.people.title}</H2>
         <p className="mt-3 max-w-prose text-slate">{c.people.intro}</p>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
-          {c.people.items.map((i) => (
+          {c.people.items.map((i, k) => (
             <div key={i.title} className="rounded-card border-t-4 border-oliva bg-white p-6">
+              <div className="mb-4"><IconBadge name={peopleIcons[k]} tone="oliva" /></div>
               <h3 className="font-serif text-xl text-navy">{i.title}</h3>
               <p className="mt-2 text-[15px] leading-relaxed">{i.text}</p>
               <ul className="mt-3 space-y-1 text-sm text-slate">{i.bullets.map((b) => <li key={b}>· {b}</li>)}</ul>

@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import type { ComponentProps } from "react";
+import { IconBadge, type IconName } from "./icons";
 
 export function Section({ children, className = "", tone = "paper" }: { children: React.ReactNode; className?: string; tone?: "paper" | "cream" | "navy" | "white" }) {
   const bg = { paper: "bg-paper", cream: "bg-cream", navy: "bg-navy text-cream", white: "bg-white" }[tone];
@@ -26,9 +27,10 @@ export function ButtonLink({ href, children, variant = "primary", ...rest }: Com
   return <Link href={href} {...rest} className={`inline-block rounded px-6 py-3 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold ${cls}`}>{children}</Link>;
 }
 
-export function Card({ title, children }: { title: string; children: React.ReactNode }) {
+export function Card({ title, children, icon }: { title: string; children: React.ReactNode; icon?: IconName }) {
   return (
     <div className="rounded-card border border-navy/10 bg-white p-6">
+      {icon && <div className="mb-4"><IconBadge name={icon} /></div>}
       <h3 className="font-serif text-xl text-navy">{title}</h3>
       <div className="mt-2 text-[15px] leading-relaxed text-ink">{children}</div>
     </div>

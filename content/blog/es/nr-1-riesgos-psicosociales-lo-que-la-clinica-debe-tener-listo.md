@@ -9,7 +9,7 @@ La Portaria MTE 1.419/2024 incluyó los factores de riesgo psicosocial en la Ges
 
 ## Qué pide la fiscalización
 
-El Programa de Gestión de Riesgos (PGR) debe mostrar tres cosas: que los riesgos psicosociales fueron identificados por función — sobrecarga, jornadas agotadoras, acoso, conflicto de roles, falta de autonomía —, que cada riesgo fue evaluado y que existe un plan de acción con responsable y plazo. Sin evidencia de seguimiento, el plan vale poco.
+El Programa de Gestión de Riesgos (PGR) debe mostrar tres cosas: que los riesgos psicosociales fueron identificados por función, sobrecarga, jornadas agotadoras, acoso, conflicto de roles, falta de autonomía, que cada riesgo fue evaluado y que existe un plan de acción con responsable y plazo. Sin evidencia de seguimiento, el plan vale poco.
 
 ## Por qué clínicas y hospitales están más expuestos
 
@@ -17,6 +17,6 @@ Guardias, contacto con el sufrimiento, presión de las aseguradoras y equipos re
 
 ## Por dónde empezar
 
-Relevamiento por función con instrumento validado aplicado por psicóloga habilitada; inventario en el PGR; plan de acción; y una rutina de seguimiento que produzca evidencia. Es el paquete que la consultoría entrega en cuatro a seis semanas — y que suele revelar, de paso, los puntos de tensión que frenan el crecimiento de la empresa.
+Relevamiento por función con instrumento validado aplicado por psicólogos asociados de nuestro equipo; inventario en el PGR; plan de acción; y una rutina de seguimiento que produzca evidencia. Es el paquete que la consultoría entrega en cuatro a seis semanas, y que suele revelar, de paso, los puntos de tensión que frenan el crecimiento de la empresa.
 
 *Referencias: Portaria MTE 1.419/2024; NR-1 (GRO/PGR). Verifique la vigencia antes de cualquier decisión.*

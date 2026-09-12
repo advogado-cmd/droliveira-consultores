@@ -4,6 +4,8 @@ import type { Locale } from "@/i18n/routing";
 import { getContent } from "@/lib/content";
 import { buildAlternates } from "@/lib/seo";
 import { Section, Eyebrow, H1, ButtonLink } from "@/components/ui";
+import { Icons } from "@/components/icons";
+import ImageFrame from "@/components/ImageFrame";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params; const c = getContent(locale);
@@ -16,15 +18,18 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   return (
     <>
       <section className="border-b-4 border-gold bg-navy text-cream">
-        <div className="container py-16 md:py-24">
-          <Eyebrow light>{t("investors")}</Eyebrow>
-          <H1 light>{c.investors.title}</H1>
-          <p className="mt-5 max-w-2xl text-lg text-cream/85">{c.investors.intro}</p>
+        <div className="container grid gap-10 py-16 md:grid-cols-[1.4fr_1fr] md:items-center md:py-24">
+          <div>
+            <Eyebrow light>{t("investors")}</Eyebrow>
+            <H1 light>{c.investors.title}</H1>
+            <p className="mt-5 max-w-2xl text-lg text-cream/85">{c.investors.intro}</p>
+          </div>
+          <ImageFrame brief={c.images.investors} ratio="4/3" tone="dark" />
         </div>
       </section>
       <Section tone="paper">
         <ul className="grid gap-3 md:grid-cols-2">
-          {c.investors.points.map((p) => <li key={p} className="flex gap-3 rounded-card border border-navy/10 bg-white p-5"><span aria-hidden="true" className="mt-2 h-2 w-2 shrink-0 rounded-full bg-oliva" />{p}</li>)}
+          {c.investors.points.map((p) => <li key={p} className="flex gap-3 rounded-card border border-navy/10 bg-white p-5"><Icons.check className="mt-0.5 h-5 w-5 shrink-0 text-oliva" />{p}</li>)}
         </ul>
         <div className="mt-8"><ButtonLink href="/contato">{c.investors.cta}</ButtonLink></div>
       </Section>
