@@ -2,7 +2,7 @@ import type { SiteContent } from "./types";
 
 const pt: SiteContent = {
   meta: {
-    title: "Dr Oliveira Consultores · Estratégia para saúde",
+    title: "Dr Oliveira Consultores Associados · Estratégia para saúde",
     description:
       "Consultoria estratégica para hospitais, clínicas médicas, odontológicas, veterinárias e de estética: due diligence 360, plano de desbloqueio e condução do crescimento.",
     ogLocale: "pt_BR",
@@ -62,7 +62,7 @@ const pt: SiteContent = {
     finalCta: "Agendar conversa",
   },
   services: {
-    metaTitle: "Serviços · Dr Oliveira Consultores",
+    metaTitle: "Serviços · Dr Oliveira Consultores Associados",
     metaDescription: "Due Diligence Express e 360, Plano de Desbloqueio, Condução do Ciclo de Crescimento e Readiness para expansão, venda ou investimento.",
     title: "Sete serviços, uma sequência",
     intro: "Cada serviço responde a uma pergunta da administração. A due diligence é a porta de entrada; os demais só fazem sentido depois dela.",
@@ -78,7 +78,7 @@ const pt: SiteContent = {
     faq: [],
   },
   sectors: {
-    metaTitle: "Segmentos · Dr Oliveira Consultores",
+    metaTitle: "Segmentos · Dr Oliveira Consultores Associados",
     metaDescription: "Hospitais e clínicas médicas, odontologia, veterinária, estética, laboratórios e healthtechs: o que analisamos em cada segmento.",
     title: "Segmentos",
     intro: "Cada setor tem o seu próprio conjunto de normas, concorrentes e modelos de receita. A leitura é a mesma; os pontos de atenção mudam.",
@@ -131,7 +131,7 @@ const pt: SiteContent = {
     cta: "Falar sobre uma operação",
   },
   contact: {
-    metaTitle: "Contato · Dr Oliveira Consultores",
+    metaTitle: "Contato · Dr Oliveira Consultores Associados",
     metaDescription: "Solicite uma due diligence ou agende uma conversa de 45 minutos.",
     title: "Solicitar due diligence",
     intro: "Conte em poucas linhas o que a empresa precisa. Respondemos em até um dia útil com o próximo passo.",
@@ -142,7 +142,7 @@ const pt: SiteContent = {
   },
   legal: {
     privacy: { title: "Política de Privacidade", body: [
-      "1. Controlador e encarregado. A Dr Oliveira Consultores (\"Consultoria\") é a controladora dos dados pessoais tratados neste site. O encarregado de proteção de dados (DPO) atende pelo e-mail droliveira@droliveiraconsultores.com.br e pelo telefone +55 11 99858-6777. [A CONFIRMAR: razão social, CNPJ e endereço.]",
+      "1. Controlador e encarregado. A Dr Oliveira Consultores Associados (\"Consultoria\") é a controladora dos dados pessoais tratados neste site. O encarregado de proteção de dados (DPO) atende pelo e-mail droliveira@droliveiraconsultores.com.br e pelo telefone +55 11 99858-6777. [A CONFIRMAR: razão social, CNPJ e endereço.]",
       "2. Dados coletados. Dados fornecidos por você: nome, empresa, cargo, e-mail, telefone/WhatsApp e o conteúdo das mensagens enviadas pelos formulários. Dados coletados automaticamente: endereço IP, tipo de navegador e dispositivo, páginas visitadas, origem do acesso (inclusive parâmetros de campanha) e identificadores de cookies, quando autorizados. Na área do cliente: e-mail de acesso, senha (armazenada apenas como hash) e registros de acesso aos relatórios.",
       "3. Finalidades. Responder às solicitações recebidas; enviar o material solicitado nas páginas de captura; propor e executar os serviços de consultoria; dar acesso aos relatórios na área do cliente; medir a audiência do site e melhorar seu conteúdo; enviar, quando autorizado, conteúdo sobre gestão e regulação dos setores atendidos; cumprir obrigações legais e regulatórias; e garantir a segurança do site.",
       "4. Bases legais. Consentimento (art. 7º, I, da Lei 13.709/2018) para o envio de conteúdo e para cookies de análise; execução de contrato ou de procedimentos preliminares (art. 7º, V) para propostas e serviços; legítimo interesse (art. 7º, IX) para o atendimento de contatos comerciais, segurança e melhoria do site; cumprimento de obrigação legal (art. 7º, II) quando aplicável.",
@@ -167,7 +167,7 @@ const pt: SiteContent = {
       "2. Natureza do conteúdo. O conteúdo do site tem caráter informativo e de gestão. Não constitui aconselhamento jurídico, médico, odontológico ou veterinário, nem garantia de resultado. Referências a normas são datadas e podem ter sido alteradas; confirme a vigência antes de qualquer decisão. Estimativas de economia, receita ou valuation apresentadas em materiais e relatórios são projeções fundamentadas em documentos, não garantias.",
       "3. Serviços. A contratação de serviços de consultoria ocorre por proposta e contrato próprios, que prevalecem sobre estes termos. A Consultoria não presta serviços jurídicos; atos jurídicos decorrentes de um plano são executados por assessoria independente escolhida pelo cliente.",
       "4. Área do cliente. O acesso é pessoal e intransferível. O cliente é responsável pela guarda da senha e pelo uso da conta. Os relatórios disponibilizados são confidenciais e destinados exclusivamente à empresa contratante; sua reprodução ou divulgação a terceiros sem autorização é vedada.",
-      "5. Propriedade intelectual. Marcas, textos, imagens, método, matriz de análise, checklists e relatórios pertencem à Dr Oliveira Consultores. É proibida a reprodução, extração automatizada ou uso comercial sem autorização escrita.",
+      "5. Propriedade intelectual. Marcas, textos, imagens, método, matriz de análise, checklists e relatórios pertencem à Dr Oliveira Consultores Associados. É proibida a reprodução, extração automatizada ou uso comercial sem autorização escrita.",
       "6. Busca por IA. As respostas do assistente são geradas automaticamente a partir do conteúdo do site, podem conter imprecisões e não substituem uma conversa com o consultor.",
       "7. Limitação de responsabilidade. A Consultoria não responde por decisões tomadas exclusivamente com base no conteúdo do site, sem análise contratada, nem por indisponibilidades temporárias, conteúdo de sites de terceiros ou danos decorrentes de uso indevido.",
       "8. Links externos. Links para sites de terceiros são fornecidos por conveniência; a Consultoria não responde pelo conteúdo ou pelas práticas de privacidade deles.",
@@ -195,7 +195,7 @@ const pt: SiteContent = {
     { slug: "laboratorios", sectorKey: "laboratorios", name: "Laboratórios e healthtechs", headline: "Um bilhão de exames por ano. Sessenta a noventa por cento da receita nas mãos de operadoras que estão comprando laboratórios.", sub: "Um mapa de dependência e conformidade para laboratórios e healthtechs decidirem entre consolidação e independência.", pains: [{ title: "Receita concentrada em operadoras", text: "Verticalização e redução de rede credenciada mudam o contrato sem aviso. Quem não mede a concentração descobre tarde." }, { title: "RDC 786/2023 e dado genético como dado sensível", text: "A norma de funcionamento mudou em 2023 e a ANPD priorizou dados de saúde em 2026. Laudo é dado sensível." }, { title: "Software como dispositivo médico", text: "Healthtechs que vendem para hospitais precisam de registro (RDC 657/2022) e de aderência à RDC 36. Sem isso, a compra não fecha." }], magnet: { title: "Mapa de dependência e conformidade para laboratórios e healthtechs", intro: "Doze medições e verificações para decidir a estratégia dos próximos 24 meses.", items: ["Percentual de receita das três maiores operadoras", "Prazo médio de recebimento por operadora", "Glosa por operadora", "Licença de funcionamento conforme RDC 786/2023", "Responsável técnico registrado no conselho", "Controle de qualidade interno e externo documentado", "Programa de proteção de dados com dado genético como sensível", "Notificação de incidentes em 3 dias úteis (Res. ANPD 15/2024)", "Registro de software como dispositivo médico quando aplicável (RDC 657/2022)", "Aderência a RDC 36/2013 para vender a hospitais", "Telemedicina e laudos à distância conforme Lei 14.510/2022", "Valuation orientativo e cenário de consolidação"] }, cta: "Receber o mapa", metaTitle: "Dependência e conformidade para laboratórios e healthtechs", metaDescription: "Doze medições para laboratórios e healthtechs decidirem entre consolidação e independência com segurança regulatória." },
   ],
   ma: {
-    metaTitle: "Fusões e aquisições · Dr Oliveira Consultores",
+    metaTitle: "Fusões e aquisições · Dr Oliveira Consultores Associados",
     metaDescription: "Readiness para venda, compra, entrada de sócio ou investimento em hospitais, clínicas e redes de saúde, odontologia, veterinária e estética.",
     title: "Comprar, vender ou receber um sócio sem levar um problema junto.",
     intro: "O setor de saúde consolida em ritmo acelerado. Do lado de quem vende, o preço depende de gestão demonstrável, não de reputação. Do lado de quem compra, o que reprecifica o negócio quase nunca está no balanço: está no cadastro, nas licenças, nos contratos e nas pessoas. Preparamos os dois lados.",
@@ -208,7 +208,7 @@ const pt: SiteContent = {
     cta: "Falar sobre uma operação",
   },
   faq: [
-    { q: "A consultoria presta serviços jurídicos?", a: "Não. A Dr Oliveira Consultores faz due diligence, planejamento e condução de gestão. Atos jurídicos decorrentes do plano são executados por assessoria independente escolhida pela empresa." },
+    { q: "A consultoria presta serviços jurídicos?", a: "Não. A Dr Oliveira Consultores Associados faz due diligence, planejamento e condução de gestão. Atos jurídicos decorrentes do plano são executados por assessoria independente escolhida pela empresa." },
     { q: "Quanto tempo leva uma Due Diligence 360?", a: "De três a seis semanas, conforme o porte e a documentação disponível. A Due Diligence Express leva de um a três dias." },
     { q: "Preciso parar a operação para a due diligence?", a: "Não. O trabalho usa documentos, cadastros públicos e uma visita técnica marcada com a administração." },
     { q: "Vocês garantem resultado?", a: "Não. Entregamos leitura fundamentada, plano com custos estimados e condução com indicadores. Economias e receitas projetadas são estimativas, não garantias." },

@@ -27,8 +27,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-navy/10 bg-paper/95 backdrop-blur">
       <div className="container flex h-16 items-center justify-between gap-6">
-        <Link href="/" className="flex items-center" aria-label="Dr Oliveira Consultores">
-          <Image src="/brand/logo-navy.png" alt="Dr Oliveira Consultores" width={220} height={68} priority className="h-11 w-auto" />
+        <Link href="/" className="flex items-center" aria-label="Dr Oliveira Consultores Associados">
+          <Image src="/brand/logo-navy.png" alt="Dr Oliveira Consultores Associados" width={220} height={68} priority className="h-11 w-auto" />
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium text-navy lg:flex" aria-label="Principal">
           {items.map((i) => (

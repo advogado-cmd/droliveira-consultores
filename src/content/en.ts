@@ -2,7 +2,7 @@ import type { SiteContent } from "./types";
 
 const en: SiteContent = {
   meta: {
-    title: "Dr Oliveira Consultores · Healthcare strategy in Brazil",
+    title: "Dr Oliveira Consultores Associados · Healthcare strategy in Brazil",
     description:
       "Strategy consulting for hospitals, medical, dental, veterinary and aesthetic clinics in Brazil: 360 due diligence, unlock plan and growth-cycle steering.",
     ogLocale: "en_US",
@@ -62,7 +62,7 @@ const en: SiteContent = {
     finalCta: "Book the conversation",
   },
   services: {
-    metaTitle: "Services · Dr Oliveira Consultores",
+    metaTitle: "Services · Dr Oliveira Consultores Associados",
     metaDescription: "Express and 360 Due Diligence, Unlock Plan, Growth Cycle Steering and Readiness for expansion, sale or investment.",
     title: "Seven services, one sequence",
     intro: "Each service answers one management question. The due diligence is the entry point; the others only make sense after it.",
@@ -78,7 +78,7 @@ const en: SiteContent = {
     faq: [],
   },
   sectors: {
-    metaTitle: "Sectors · Dr Oliveira Consultores",
+    metaTitle: "Sectors · Dr Oliveira Consultores Associados",
     metaDescription: "Hospitals and medical clinics, dental, veterinary, aesthetic clinics, laboratories and health-techs: what we analyse in each sector.",
     title: "Sectors",
     intro: "Each sector has its own set of rules, competitors and revenue models. The reading is the same; the points of attention change.",
@@ -131,7 +131,7 @@ const en: SiteContent = {
     cta: "Discuss a deal",
   },
   contact: {
-    metaTitle: "Contact · Dr Oliveira Consultores",
+    metaTitle: "Contact · Dr Oliveira Consultores Associados",
     metaDescription: "Request a due diligence or book a 45-minute conversation.",
     title: "Request a due diligence",
     intro: "In a few lines, tell us what the company needs. We reply within one business day with the next step.",
@@ -142,7 +142,7 @@ const en: SiteContent = {
   },
   legal: {
     privacy: { title: "Privacy Policy", body: [
-      "1. Controller and data protection officer. Dr Oliveira Consultores (\"Consultancy\") is the controller of the personal data processed on this site. The data protection officer (DPO) can be reached at droliveira@droliveiraconsultores.com.br and +55 11 99858-6777. [TO CONFIRM: legal name, tax ID and address.]",
+      "1. Controller and data protection officer. Dr Oliveira Consultores Associados (\"Consultancy\") is the controller of the personal data processed on this site. The data protection officer (DPO) can be reached at droliveira@droliveiraconsultores.com.br and +55 11 99858-6777. [TO CONFIRM: legal name, tax ID and address.]",
       "2. Data collected. Data you provide: name, company, role, e-mail, phone/WhatsApp and the content of messages sent through the forms. Data collected automatically: IP address, browser and device type, pages visited, source of access (including campaign parameters) and cookie identifiers, when authorised. In the client area: login e-mail, password (stored only as a hash) and access logs for reports.",
       "3. Purposes. Answering enquiries; sending the material requested on capture pages; proposing and delivering consulting services; giving access to reports in the client area; measuring site audience and improving content; sending, when authorised, content on management and regulation in the sectors served; complying with legal and regulatory obligations; and keeping the site secure.",
       "4. Legal bases. Consent (art. 7, I, Law 13,709/2018) for content and analytics cookies; performance of a contract or preliminary procedures (art. 7, V) for proposals and services; legitimate interest (art. 7, IX) for handling commercial enquiries, security and site improvement; compliance with a legal obligation (art. 7, II) where applicable.",
@@ -167,7 +167,7 @@ const en: SiteContent = {
       "2. Nature of the content. The site's content is informational and management-oriented. It is not legal, medical, dental or veterinary advice, nor a guarantee of results. References to rules are dated and may have changed; confirm they are in force before any decision. Estimates of savings, revenue or valuation in materials and reports are document-based projections, not guarantees.",
       "3. Services. Consulting services are contracted through their own proposal and agreement, which prevail over these terms. The Consultancy does not provide legal services; legal acts arising from a plan are carried out by independent counsel chosen by the client.",
       "4. Client area. Access is personal and non-transferable. The client is responsible for keeping the password and for the use of the account. Reports made available are confidential and intended exclusively for the contracting company; reproduction or disclosure to third parties without authorisation is prohibited.",
-      "5. Intellectual property. Trademarks, texts, images, method, analysis matrix, checklists and reports belong to Dr Oliveira Consultores. Reproduction, automated extraction or commercial use without written authorisation is prohibited.",
+      "5. Intellectual property. Trademarks, texts, images, method, analysis matrix, checklists and reports belong to Dr Oliveira Consultores Associados. Reproduction, automated extraction or commercial use without written authorisation is prohibited.",
       "6. AI search. The assistant's answers are generated automatically from the site's content, may contain inaccuracies and do not replace a conversation with the consultant.",
       "7. Limitation of liability. The Consultancy is not liable for decisions taken solely on the basis of the site's content without a contracted analysis, nor for temporary unavailability, third-party site content or damage arising from misuse.",
       "8. External links. Links to third-party sites are provided for convenience; the Consultancy is not responsible for their content or privacy practices.",
@@ -195,7 +195,7 @@ const en: SiteContent = {
     { slug: "laboratorios", sectorKey: "laboratorios", name: "Laboratories and health-techs", headline: "A billion tests a year. Sixty to ninety per cent of revenue in the hands of payers that are buying laboratories.", sub: "A dependence and compliance map for laboratories and health-techs to decide between consolidation and independence.", pains: [{ title: "Revenue concentrated in payers", text: "Verticalisation and network cuts change the contract without notice. Those who do not measure concentration find out late." }, { title: "RDC 786/2023 and genetic data as sensitive data", text: "The operating rule changed in 2023 and the data authority prioritised health data in 2026. A test report is sensitive data." }, { title: "Software as a medical device", text: "Health-techs selling to hospitals need registration (RDC 657/2022) and adherence to RDC 36. Without them, the purchase does not close." }], magnet: { title: "Dependence and compliance map for laboratories and health-techs", intro: "Twelve measurements and checks to decide the strategy for the next 24 months.", items: ["Share of revenue from the three largest payers", "Average collection period per payer", "Denials per payer", "Operating licence as per RDC 786/2023", "Technical officer registered with the council", "Internal and external quality control documented", "Data protection programme with genetic data as sensitive", "Incident notification within 3 business days (ANPD Res. 15/2024)", "Software registered as a medical device where applicable (RDC 657/2022)", "Adherence to RDC 36/2013 to sell to hospitals", "Telemedicine and remote reporting as per Law 14,510/2022", "Indicative valuation and consolidation scenario"] }, cta: "Get the map", metaTitle: "Dependence and compliance for laboratories and health-techs", metaDescription: "Twelve measurements for laboratories and health-techs to decide between consolidation and independence with regulatory safety." },
   ],
   ma: {
-    metaTitle: "Mergers & acquisitions · Dr Oliveira Consultores",
+    metaTitle: "Mergers & acquisitions · Dr Oliveira Consultores Associados",
     metaDescription: "Readiness for selling, buying, bringing in a partner or investing in hospitals, clinics and chains in healthcare, dental, veterinary and aesthetics in Brazil.",
     title: "Buy, sell or bring in a partner without taking a problem along.",
     intro: "Brazil's healthcare sector is consolidating fast. On the selling side, price depends on demonstrable management, not on reputation. On the buying side, what reprices the deal is almost never on the balance sheet: it sits in registrations, licences, contracts and people. We prepare both sides.",
@@ -208,7 +208,7 @@ const en: SiteContent = {
     cta: "Discuss a deal",
   },
   faq: [
-    { q: "Does the consultancy provide legal services?", a: "No. Dr Oliveira Consultores provides due diligence, planning and management steering. Legal acts arising from the plan are carried out by independent counsel chosen by the company." },
+    { q: "Does the consultancy provide legal services?", a: "No. Dr Oliveira Consultores Associados provides due diligence, planning and management steering. Legal acts arising from the plan are carried out by independent counsel chosen by the company." },
     { q: "How long does a 360 Due Diligence take?", a: "Three to six weeks, depending on size and available records. The Express Due Diligence takes one to three days." },
     { q: "Do I need to stop operations?", a: "No. The work uses documents, public registries and one on-site visit scheduled with management." },
     { q: "Do you guarantee results?", a: "No. We deliver a grounded reading, a plan with estimated costs and steering with indicators. Projected savings and revenue are estimates, not guarantees." },

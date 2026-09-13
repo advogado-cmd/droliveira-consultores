@@ -1,4 +1,4 @@
--- Area do cliente · Dr Oliveira Consultores. Rodar uma vez no Neon (SQL Editor) ou via `npm run db:init`.
+-- Area do cliente · Dr Oliveira Consultores Associados. Rodar uma vez no Neon (SQL Editor) ou via `npm run db:init`.
 create extension if not exists pgcrypto;
 
 create table if not exists cliente (

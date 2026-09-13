@@ -1,6 +1,6 @@
 # droliveiraconsultores.com.br
 
-Site trilíngue (PT · EN · ES) da Dr Oliveira Consultores. Next.js 15 (App Router) + next-intl + Tailwind, deploy na Vercel.
+Site trilíngue (PT · EN · ES) da Dr Oliveira Consultores Associados. Next.js 15 (App Router) + next-intl + Tailwind, deploy na Vercel.
 
 ## Rodar localmente
 

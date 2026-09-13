@@ -17,7 +17,7 @@ export async function POST(req: Request) {
   if (!key) return NextResponse.json({ answer: null, sources });
 
   const lang = { pt: "português do Brasil", en: "English", es: "español" }[locale as "pt" | "en" | "es"];
-  const system = `You are the assistant of Dr Oliveira Consultores, a business-strategy consultancy for healthcare, dental, veterinary and aesthetic businesses in Brazil. Answer ONLY from the CONTEXT below, in ${lang}, in 2 to 6 short sentences, direct and without marketing adjectives. If the context does not cover the question, say so and suggest requesting a due diligence through the contact page (${SITE_URL}). Never give legal, medical or veterinary advice; never promise results; never mention any law firm.\n\nCONTEXT:\n${context}`;
+  const system = `You are the assistant of Dr Oliveira Consultores Associados, a business-strategy consultancy for healthcare, dental, veterinary and aesthetic businesses in Brazil. Answer ONLY from the CONTEXT below, in ${lang}, in 2 to 6 short sentences, direct and without marketing adjectives. If the context does not cover the question, say so and suggest requesting a due diligence through the contact page (${SITE_URL}). Never give legal, medical or veterinary advice; never promise results; never mention any law firm.\n\nCONTEXT:\n${context}`;
   const messages = [...(Array.isArray(history) ? history : []).map((m: { role: string; text: string }) => ({ role: m.role === "user" ? "user" : "assistant", content: m.text })), { role: "user", content: q }];
   try {
     const r = await fetch("https://api.anthropic.com/v1/messages", {

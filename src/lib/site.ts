@@ -10,7 +10,7 @@ export const SOCIALS = [
   { name: "Facebook", href: process.env.NEXT_PUBLIC_FACEBOOK ?? "https://www.facebook.com/droliveiraconsultores" },
 ];
 export const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
-export const BRAND = "Dr Oliveira Consultores";
+export const BRAND = "Dr Oliveira Consultores Associados";
 export const CONSULTANT = "Carlos Fernando Lopes de Oliveira";
 
 export function whatsappHref(text: string) {

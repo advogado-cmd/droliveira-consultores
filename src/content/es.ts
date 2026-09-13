@@ -2,7 +2,7 @@ import type { SiteContent } from "./types";
 
 const es: SiteContent = {
   meta: {
-    title: "Dr Oliveira Consultores · Estrategia en salud, Brasil",
+    title: "Dr Oliveira Consultores Associados · Estrategia en salud, Brasil",
     description:
       "Consultoría estratégica para hospitales, clínicas médicas, odontológicas, veterinarias y de estética en Brasil: due diligence 360, plan de desbloqueo y conducción del crecimiento.",
     ogLocale: "es_ES",
@@ -62,7 +62,7 @@ const es: SiteContent = {
     finalCta: "Agendar conversación",
   },
   services: {
-    metaTitle: "Servicios · Dr Oliveira Consultores",
+    metaTitle: "Servicios · Dr Oliveira Consultores Associados",
     metaDescription: "Due Diligence Express y 360, Plan de Desbloqueo, Conducción del Ciclo de Crecimiento y Readiness para expansión, venta o inversión.",
     title: "Siete servicios, una secuencia",
     intro: "Cada servicio responde a una pregunta de la administración. La due diligence es la puerta de entrada; los demás solo tienen sentido después de ella.",
@@ -78,7 +78,7 @@ const es: SiteContent = {
     faq: [],
   },
   sectors: {
-    metaTitle: "Sectores · Dr Oliveira Consultores",
+    metaTitle: "Sectores · Dr Oliveira Consultores Associados",
     metaDescription: "Hospitales y clínicas médicas, odontología, veterinaria, estética, laboratorios y healthtechs: qué analizamos en cada sector.",
     title: "Sectores",
     intro: "Cada sector tiene su propio conjunto de normas, competidores y modelos de ingresos. La lectura es la misma; los puntos de atención cambian.",
@@ -131,7 +131,7 @@ const es: SiteContent = {
     cta: "Hablar sobre una operación",
   },
   contact: {
-    metaTitle: "Contacto · Dr Oliveira Consultores",
+    metaTitle: "Contacto · Dr Oliveira Consultores Associados",
     metaDescription: "Solicite una due diligence o agende una conversación de 45 minutos.",
     title: "Solicitar due diligence",
     intro: "En pocas líneas, cuéntenos qué necesita la empresa. Respondemos en un día hábil con el siguiente paso.",
@@ -142,7 +142,7 @@ const es: SiteContent = {
   },
   legal: {
     privacy: { title: "Política de Privacidad", body: [
-      "1. Responsable y encargado. Dr Oliveira Consultores (\"Consultoría\") es la responsable de los datos personales tratados en este sitio. El encargado de protección de datos (DPO) atiende en droliveira@droliveiraconsultores.com.br y en el +55 11 99858-6777. [A CONFIRMAR: razón social, número fiscal y dirección.]",
+      "1. Responsable y encargado. Dr Oliveira Consultores Associados (\"Consultoría\") es la responsable de los datos personales tratados en este sitio. El encargado de protección de datos (DPO) atiende en droliveira@droliveiraconsultores.com.br y en el +55 11 99858-6777. [A CONFIRMAR: razón social, número fiscal y dirección.]",
       "2. Datos recogidos. Datos que usted proporciona: nombre, empresa, cargo, e-mail, teléfono/WhatsApp y el contenido de los mensajes enviados por los formularios. Datos recogidos automáticamente: dirección IP, tipo de navegador y dispositivo, páginas visitadas, origen del acceso (incluidos parámetros de campaña) e identificadores de cookies, cuando estén autorizados. En el área del cliente: e-mail de acceso, contraseña (almacenada solo como hash) y registros de acceso a los informes.",
       "3. Finalidades. Responder a las solicitudes recibidas; enviar el material solicitado en las páginas de captura; proponer y ejecutar los servicios de consultoría; dar acceso a los informes en el área del cliente; medir la audiencia del sitio y mejorar su contenido; enviar, cuando esté autorizado, contenido sobre gestión y regulación de los sectores atendidos; cumplir obligaciones legales y regulatorias; y garantizar la seguridad del sitio.",
       "4. Bases legales. Consentimiento (art. 7, I, Ley 13.709/2018) para el envío de contenido y las cookies de análisis; ejecución de contrato o de procedimientos preliminares (art. 7, V) para propuestas y servicios; interés legítimo (art. 7, IX) para la atención de contactos comerciales, seguridad y mejora del sitio; cumplimiento de obligación legal (art. 7, II) cuando aplique.",
@@ -167,7 +167,7 @@ const es: SiteContent = {
       "2. Naturaleza del contenido. El contenido del sitio es informativo y de gestión. No constituye asesoramiento jurídico, médico, odontológico ni veterinario, ni garantía de resultado. Las referencias a normas están fechadas y pueden haber cambiado; confirme su vigencia antes de cualquier decisión. Las estimaciones de ahorro, ingresos o valuación en materiales e informes son proyecciones fundadas en documentos, no garantías.",
       "3. Servicios. La contratación de servicios de consultoría se hace por propuesta y contrato propios, que prevalecen sobre estos términos. La Consultoría no presta servicios jurídicos; los actos jurídicos derivados de un plan los ejecuta una asesoría independiente elegida por el cliente.",
       "4. Área del cliente. El acceso es personal e intransferible. El cliente es responsable de la custodia de la contraseña y del uso de la cuenta. Los informes disponibles son confidenciales y destinados exclusivamente a la empresa contratante; está prohibida su reproducción o divulgación a terceros sin autorización.",
-      "5. Propiedad intelectual. Marcas, textos, imágenes, método, matriz de análisis, checklists e informes pertenecen a Dr Oliveira Consultores. Está prohibida la reproducción, extracción automatizada o uso comercial sin autorización escrita.",
+      "5. Propiedad intelectual. Marcas, textos, imágenes, método, matriz de análisis, checklists e informes pertenecen a Dr Oliveira Consultores Associados. Está prohibida la reproducción, extracción automatizada o uso comercial sin autorización escrita.",
       "6. Búsqueda por IA. Las respuestas del asistente se generan automáticamente a partir del contenido del sitio, pueden contener imprecisiones y no sustituyen una conversación con el consultor.",
       "7. Limitación de responsabilidad. La Consultoría no responde por decisiones tomadas exclusivamente con base en el contenido del sitio, sin análisis contratado, ni por indisponibilidades temporales, contenido de sitios de terceros o daños derivados de uso indebido.",
       "8. Enlaces externos. Los enlaces a sitios de terceros se ofrecen por conveniencia; la Consultoría no responde por su contenido ni por sus prácticas de privacidad.",
@@ -195,7 +195,7 @@ const es: SiteContent = {
     { slug: "laboratorios", sectorKey: "laboratorios", name: "Laboratorios y healthtechs", headline: "Mil millones de exámenes al año. Del sesenta al noventa por ciento de los ingresos en manos de aseguradoras que están comprando laboratorios.", sub: "Un mapa de dependencia y conformidad para que laboratorios y healthtechs decidan entre consolidación e independencia.", pains: [{ title: "Ingresos concentrados en aseguradoras", text: "La verticalización y los recortes de red cambian el contrato sin aviso. Quien no mide la concentración lo descubre tarde." }, { title: "RDC 786/2023 y dato genético como dato sensible", text: "La norma de funcionamiento cambió en 2023 y la autoridad de datos priorizó la salud en 2026. Un informe de laboratorio es dato sensible." }, { title: "Software como dispositivo médico", text: "Las healthtechs que venden a hospitales necesitan registro (RDC 657/2022) y adherencia a la RDC 36. Sin eso, la compra no cierra." }], magnet: { title: "Mapa de dependencia y conformidad para laboratorios y healthtechs", intro: "Doce mediciones y verificaciones para decidir la estrategia de los próximos 24 meses.", items: ["Porcentaje de ingresos de las tres mayores aseguradoras", "Plazo medio de cobro por aseguradora", "Glosa por aseguradora", "Licencia de funcionamiento según RDC 786/2023", "Responsable técnico registrado en el consejo", "Control de calidad interno y externo documentado", "Programa de protección de datos con dato genético como sensible", "Notificación de incidentes en 3 días hábiles (Res. ANPD 15/2024)", "Software registrado como dispositivo médico cuando aplique (RDC 657/2022)", "Adherencia a la RDC 36/2013 para vender a hospitales", "Telemedicina e informes a distancia según Ley 14.510/2022", "Valuación orientativa y escenario de consolidación"] }, cta: "Recibir el mapa", metaTitle: "Dependencia y conformidad para laboratorios y healthtechs", metaDescription: "Doce mediciones para que laboratorios y healthtechs decidan entre consolidación e independencia con seguridad regulatoria." },
   ],
   ma: {
-    metaTitle: "Fusiones y adquisiciones · Dr Oliveira Consultores",
+    metaTitle: "Fusiones y adquisiciones · Dr Oliveira Consultores Associados",
     metaDescription: "Readiness para vender, comprar, incorporar un socio o invertir en hospitales, clínicas y cadenas de salud, odontología, veterinaria y estética en Brasil.",
     title: "Comprar, vender o incorporar un socio sin llevarse un problema.",
     intro: "El sector de salud brasileño se consolida a ritmo acelerado. Del lado de quien vende, el precio depende de gestión demostrable, no de reputación. Del lado de quien compra, lo que reprecia el negocio casi nunca está en el balance: está en los registros, las licencias, los contratos y las personas. Preparamos a ambos lados.",
@@ -208,7 +208,7 @@ const es: SiteContent = {
     cta: "Hablar sobre una operación",
   },
   faq: [
-    { q: "¿La consultoría presta servicios jurídicos?", a: "No. Dr Oliveira Consultores hace due diligence, planificación y conducción de gestión. Los actos jurídicos derivados del plan los ejecuta una asesoría independiente elegida por la empresa." },
+    { q: "¿La consultoría presta servicios jurídicos?", a: "No. Dr Oliveira Consultores Associados hace due diligence, planificación y conducción de gestión. Los actos jurídicos derivados del plan los ejecuta una asesoría independiente elegida por la empresa." },
     { q: "¿Cuánto tarda una Due Diligence 360?", a: "De tres a seis semanas, según el tamaño y la documentación disponible. La Due Diligence Express tarda de uno a tres días." },
     { q: "¿Necesito detener la operación?", a: "No. El trabajo usa documentos, registros públicos y una visita técnica programada con la administración." },
     { q: "¿Garantizan resultados?", a: "No. Entregamos una lectura fundamentada, un plan con costos estimados y conducción con indicadores. Los ahorros e ingresos proyectados son estimaciones, no garantías." },
