@@ -18,7 +18,7 @@
     "ma": "Fusões e aquisições"
   },
   "footer": {
-    "tagline": "Ampliar a visão. Destravar áreas. Crescer de novo.",
+    "tagline": "A saúde da sua empresa, examinada por inteiro.",
     "cities": "São Paulo · Recife · Belém",
     "legal": "Legal",
     "privacy": "Privacidade",
@@ -62,8 +62,8 @@
     "whatWeAnalyse": "O que analisamos",
     "outcome": "Resultado",
     "allSectors": "Todos os segmentos",
-    "howItWorks": "Como funciona",
-    "threeLenses": "Quatro lentes, uma leitura",
+    "howItWorks": "Como funciona o exame",
+    "threeLenses": "Quatro sistemas vitais, um exame",
     "forWhom": "Para quem",
     "credentials": "Credenciais",
     "services": "Serviços",
@@ -129,7 +129,7 @@
   },
   "blog": {
     "title": "Insights",
-    "intro": "Leituras curtas sobre mercado, gestão e regulação nos setores que atendemos.",
+    "intro": "Leituras curtas sobre a saúde das empresas de saúde: mercado, gestão e regulação.",
     "read": "Ler",
     "by": "Por",
     "minutes": "min de leitura",

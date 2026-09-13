@@ -7,8 +7,8 @@ export default function OG() {
     (
       <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", background: "#082533", color: "#EFEBE6", padding: 72, fontFamily: "serif", borderBottom: "14px solid #CCAB76" }}>
         <div style={{ fontSize: 24, letterSpacing: 6, color: "#CCAB76" }}>DR.OLIVEIRA · CONSULTORES ASSOCIADOS</div>
-        <div style={{ fontSize: 60, lineHeight: 1.15, maxWidth: 1000 }}>Ampliar a visão. Destravar áreas. Crescer de novo.</div>
-        <div style={{ fontSize: 26, color: "#A9B79E" }}>Estratégia · Mercado · Regulação — droliveiraconsultores.com.br</div>
+        <div style={{ fontSize: 52, lineHeight: 1.15, maxWidth: 1000 }}>Você cuida da saúde de todo mundo. Quem examina a saúde da sua empresa?</div>
+        <div style={{ fontSize: 26, color: "#A9B79E" }}>Regulação · Negócios · Posicionamento · Pessoas · droliveiraconsultores.com.br</div>
       </div>
     ),
     size

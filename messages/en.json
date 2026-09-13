@@ -18,7 +18,7 @@
     "ma": "Mergers & acquisitions"
   },
   "footer": {
-    "tagline": "See the whole company. Unlock what holds it back. Grow again.",
+    "tagline": "The health of your company, examined in full.",
     "cities": "São Paulo · Recife · Belém",
     "legal": "Legal",
     "privacy": "Privacy",
@@ -62,8 +62,8 @@
     "whatWeAnalyse": "What we analyse",
     "outcome": "Outcome",
     "allSectors": "All sectors",
-    "howItWorks": "How it works",
-    "threeLenses": "Four lenses, one reading",
+    "howItWorks": "How the examination works",
+    "threeLenses": "Four vital systems, one examination",
     "forWhom": "Who it is for",
     "credentials": "Credentials",
     "services": "Services",
@@ -129,7 +129,7 @@
   },
   "blog": {
     "title": "Insights",
-    "intro": "Short reads on market, management and regulation in the sectors we serve.",
+    "intro": "Short reads on the health of healthcare businesses: market, management and regulation.",
     "read": "Read",
     "by": "By",
     "minutes": "min read",

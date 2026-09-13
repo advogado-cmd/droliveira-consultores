@@ -41,7 +41,7 @@ export type IconName = keyof typeof Icons;
 export const lensIcons: IconName[] = ["regulation", "market", "marketing", "people"];
 export const moveIcons: IconName[] = ["see", "unlock", "grow"];
 export const serviceIcons: IconName[] = ["express", "dd360", "plan", "steer", "readiness", "orgassess", "nr1"];
-export const peopleIcons: IconName[] = ["orgassess", "people", "nr1"];
+export const peopleIcons: IconName[] = ["nr1", "orgassess", "plan", "people"];
 export function IconBadge({ name, tone = "gold", size = "md" }: { name: IconName; tone?: "gold" | "oliva" | "cream"; size?: "md" | "lg" }) {
   const I = Icons[name];
   const cls = { gold: "bg-gold/20 text-gold-600", oliva: "bg-oliva/15 text-oliva-700", cream: "bg-cream/15 text-gold" }[tone];

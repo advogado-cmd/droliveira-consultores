@@ -108,7 +108,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <Eyebrow>{c.people.eyebrow}</Eyebrow>
         <H2>{c.people.title}</H2>
         <p className="mt-3 max-w-prose text-slate">{c.people.intro}</p>
-        <div className="mt-8 grid gap-5 md:grid-cols-3">
+        <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {c.people.items.map((i, k) => (
             <div key={i.title} className="rounded-card border-t-4 border-oliva bg-white p-6">
               <div className="mb-4"><IconBadge name={peopleIcons[k]} tone="oliva" /></div>
